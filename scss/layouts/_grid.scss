@@ -1,0 +1,30 @@
+// -------------------- GRID --------------------
+.layout {
+    min-height: 100vh;
+    background-color: $blanco-claro;
+    font-family: $fuente-principal;
+    color: $gris-texto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+
+    @include tablet {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+
+    @include mobile {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+}

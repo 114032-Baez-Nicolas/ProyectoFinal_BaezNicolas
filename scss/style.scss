@@ -1,0 +1,16 @@
+// -------------------- UTILS --------------------
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/reset';
+@import 'utils/animations';
+
+// -------------------- COMPONENTS --------------------
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/carousel';
+
+// -------------------- LAYOUTS --------------------
+@import 'layouts/grid';
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/main';

@@ -1,0 +1,35 @@
+// -------------------- HEADER --------------------
+.layout__header {
+    grid-area: header;
+    text-align: center;
+    padding: 20px 0;
+    @include flex-columna-centro;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar {
+    top: 0;
+    z-index: 1000;
+    background-color: $blanco-navbar;
+    border-bottom: 1px solid $gris-borde;
+}
+
+.navbar__logo {
+    width: 90px;
+    height: auto;
+    @include transicion-suave;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    @include mobile {
+        width: 60px;
+    }
+
+    @include tablet {
+        width: 70px;
+    }
+}

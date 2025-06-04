@@ -1,0 +1,47 @@
+// Colores base
+$blanco-puro: #ffffff;
+$blanco-claro: #f8f8f8;
+$blanco-navbar: #f8f9fa;
+$gris-claro: #eaeaea;
+$gris-borde: #dddddd;
+$gris-texto: #333333;
+$gris-texto-secundario: #555555;
+
+// Colores de acciones
+$azul-primario: #396390;
+$azul-navy: #0369ce;
+$azul-oscuro: #0362c7;
+$marron-hover: #7b290c;
+$rojo-error: #dc3545;
+$verde-exito: #198754;
+$amarillo-advertencia: #ffc107;
+$azul-fondo-oscuro: #5676a5;
+$gris-hover: #707070;
+
+// Sombra
+$sombra-suave: rgba(0, 0, 0, 0.15);
+$sombra-fuerte: rgba(0, 0, 0, 0.3);
+
+// Tipografía
+$fuente-principal: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+// -------------------- COLORES DINÁMICOS --------------------
+
+$colores: (
+    azul-primario: $azul-primario,
+    azul-navy: $azul-navy,
+    azul-oscuro: $azul-oscuro,
+    marron-hover: $marron-hover,
+    rojo-error: $rojo-error,
+    verde-exito: $verde-exito
+);
+
+@each $nombre, $valor in $colores {
+    .bg-#{$nombre} {
+        background-color: $valor;
+    }
+
+    .text-#{$nombre} {
+        color: $valor;
+    }
+}

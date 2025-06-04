@@ -1,0 +1,122 @@
+// -------------------- CARDS --------------------
+.motoCard,
+.financiacion-card,
+.nosotros-card,
+.contacto-card {
+    background-color: $blanco-puro;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    gap: 50px;
+    @include sombra-suave;
+    @include transicion-suave;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-8px) scale(1.02);
+        @include sombra-fuerte;
+    }
+}
+
+.motoCard {
+    display: flex;
+    flex-direction: row;
+
+    img {
+        width: 300px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .motoText {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: $azul-primario;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: $gris-texto-secundario;
+        }
+    }
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+
+        .motoText {
+            padding: 10px;
+            text-align: center;
+        }
+    }
+}
+
+// -------------------- MOTOS GRID --------------------
+.motos__grid {
+    @include contenedor-limitado(950px);
+    display: grid;
+    gap: 1.5rem;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include desktop-md {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        @include animacion-slide-up(1.5s, ease-in-out);
+        max-width: 280px;
+        margin: 0 auto;
+        border-radius: 12px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        @include sombra-suave;
+
+        &:hover {
+            transform: translateY(-6px);
+            @include sombra-fuerte;
+        }
+
+        .card-img-top {
+            height: 160px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .card-body {
+            background-color: $blanco-puro;
+            padding: 1rem;
+            text-align: center;
+
+            h5 {
+                font-size: 15px;
+                color: $azul-primario;
+                margin: 0;
+            }
+        }
+    }
+}

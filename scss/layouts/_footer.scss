@@ -1,0 +1,58 @@
+// -------------------- FOOTER --------------------
+.layout__footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 20px 10px;
+    border-top: 2px solid $gris-claro;
+}
+
+.footer__redes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        color: $gris-texto;
+        @include transicion-suave;
+
+        &:hover {
+            transform: scale(1.1);
+            color: $marron-hover;
+        }
+    }
+
+    img {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+// -------------------- ICONOS DE REDES SOCIALES --------------------
+$redes: (
+    facebook: "../assets/icons/facebook.png",
+    instagram: "../assets/icons/Instagram.png",
+    twitter: "../assets/icons/twitter.png"
+);
+
+@each $red, $url in $redes {
+    .footer__#{$red} {
+        background-image: url(#{$url});
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 24px;
+        height: 24px;
+    }
+}

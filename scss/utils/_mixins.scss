@@ -1,0 +1,74 @@
+/* -------------------- MIXINS GENERALES -------------------- */
+
+// Sombra suave
+@mixin sombra-suave {
+    box-shadow: 0 4px 10px $sombra-suave;
+}
+
+// Sombra fuerte
+@mixin sombra-fuerte {
+    box-shadow: 0 8px 20px $sombra-fuerte;
+}
+
+// Transición suave estándar
+@mixin transicion-suave {
+    transition: all 0.3s ease;
+}
+
+// Flexbox centrado en ambos ejes
+@mixin flex-centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Flexbox en columna centrado
+@mixin flex-columna-centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// Tamaño máximo centrado
+@mixin contenedor-limitado($ancho-max: 850px) {
+    width: 100%;
+    max-width: $ancho-max;
+    margin: 0 auto;
+}
+
+// Estilo base para botones redondeados
+@mixin boton-redondeado($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 12px 50px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    @include sombra-fuerte;
+    @include transicion-suave;
+}
+
+// -------------------- BREAKPOINTS REUTILIZABLES --------------------
+@mixin mobile {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 577px) and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop-md {
+    @media (min-width: 769px) and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin desktop-lg {
+    @media (min-width: 993px) {
+        @content;
+    }
+}

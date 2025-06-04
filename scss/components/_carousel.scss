@@ -1,0 +1,9 @@
+// -------------------- CAROUSEL --------------------
+.motos__carousel {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 850px;
+    border-radius: 10px;
+    overflow: hidden;
+    @include sombra-suave;
+}

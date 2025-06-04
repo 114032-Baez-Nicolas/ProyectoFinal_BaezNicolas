@@ -1,0 +1,51 @@
+// -------------------- BUTTONS --------------------
+.btn-flotante {
+    @include animacion-pulse(2s, ease-in-out);
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 1001;
+    @include boton-redondeado($azul-oscuro, $blanco-puro);
+    @include transicion-suave;
+
+    &:hover {
+        background-color: $azul-navy;
+        color: $blanco-puro;
+    }
+}
+
+//--------------------- DIFERENTES BOTONES --------------------
+$botones: (
+    oscuro: $azul-primario,
+    gris: $gris-texto-secundario,
+);
+
+@each $nombre, $color in $botones {
+    .button-#{$nombre} {
+        background-color: $color;
+        color: $blanco-puro;
+        padding: 12px 30px;
+        border-radius: 8px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        @include transicion-suave;
+
+        @if $nombre =='oscuro' {
+            &:hover {
+                transform: scale(1.05);
+                background-color: $azul-fondo-oscuro;
+                color: $blanco-puro;
+            }
+        }
+
+        @else if $nombre =='gris' {
+            &:hover {
+                transform: scale(1.05);
+                background-color: $gris-hover;
+                color: $blanco-puro;
+            }
+        }
+
+    }
+}
