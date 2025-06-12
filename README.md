@@ -66,7 +66,7 @@ La entrega final incluye la aplicación de **estructura escalable usando SCSS**,
 
 ## 🚀 Despliegue en Vercel
 👉 El sitio completo está desplegado en Vercel:  
-🔗 [https://motocenter-proyecto-final.vercel.app]
+🔗 [Moto Center Proyect](https://motocenter-cordoba.vercel.app/)
 
 ---
 
