@@ -52,7 +52,7 @@
 $redes: (
     facebook: "../assets/icons/facebook.png",
     instagram: "../assets/icons/Instagram.png",
-    twitter: "../assets/icons/twitter.png"
+    twitter: "../assets/icons/twitter.png" 
 );
 
 @each $red, $url in $redes {
