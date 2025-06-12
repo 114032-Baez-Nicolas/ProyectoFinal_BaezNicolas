@@ -196,6 +196,7 @@ html {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    overflow-x: hidden;
   }
   .motoCard img {
     width: 100%;
@@ -242,7 +243,7 @@ html {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
-.motos__grid .card:hover {
+.motos__grid .card:hover, .motos__grid .card:focus-within {
   transform: translateY(-6px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
@@ -349,9 +350,18 @@ html {
 }
 @media (max-width: 576px) {
   .footer__redes {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .footer__redes {
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 .footer__redes a {
