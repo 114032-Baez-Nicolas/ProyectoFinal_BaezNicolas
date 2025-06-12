@@ -349,9 +349,18 @@ html {
 }
 @media (max-width: 576px) {
   .footer__redes {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .footer__redes {
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 .footer__redes a {
