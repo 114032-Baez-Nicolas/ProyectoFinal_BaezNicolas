@@ -25,7 +25,6 @@ La entrega final incluye la aplicación de **estructura escalable usando SCSS**,
 - SweetAlert2 para interacción de formularios
 - SEO on-page optimizado (title, description, keywords, Open Graph)
 - Git + GitHub para versionado y despliegue
-- GitHub Pages como hosting del proyecto
 - Vercel para despliegue final
 
 ---
