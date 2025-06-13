@@ -71,4 +71,18 @@ La entrega final incluye la aplicación de **estructura escalable usando SCSS**,
 
 ## ✅ Estado del proyecto
 Entrega final completa ✅  
-Sitio responsive, funcional, optimizado para SEO y con despliegue en la nube.  
+Sitio responsive, funcional, optimizado para SEO y con despliegue en la nube.
+
+---
+
+## 🖼️ Algunas capturas del sitio
+
+### 🏠 Página de Inicio
+![Página de Inicio](./screenshots/home.png)
+
+### ℹ️ Página de Información
+![Página de Información](./screenshots/info.png)
+
+### 📞 Página de Contacto
+![Página de Contacto](./screenshots/contacto.png)
+
