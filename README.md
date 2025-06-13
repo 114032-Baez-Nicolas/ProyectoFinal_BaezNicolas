@@ -2,7 +2,7 @@
 **Autor:** Nicolás Báez  
 **Carrera de Desarrollo Frontend - Coderhouse**
 
-![Banner](./screenshots/banner.png)
+![Banner](./screenshots/banner.jpg)
 
 ## 📌 Descripción
 Este proyecto fue desarrollado como parte de la **Entrega Final** del curso de Desarrollo Web en Coderhouse.  
