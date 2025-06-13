@@ -13,7 +13,7 @@ La entrega final incluye la aplicación de **estructura escalable usando SCSS**,
 ## 🎥 Vista previa en video
 
 📺 Podés ver una demostración del proyecto en este video de YouTube:  
-🔗 [https://www.youtube.com/watch?v=5PrjmakeGc0](https://youtu.be/7wdw8-HSZWE)
+🔗 [https://youtu.be/7wdw8-HSZWE](https://www.youtube.com/watch?v=z3n5PX5Ub7Q)
 
 ---
 
