@@ -2,6 +2,8 @@
 **Autor:** Nicolás Báez  
 **Carrera de Desarrollo Frontend - Coderhouse**
 
+![Banner](./screenshots/banner.png)
+
 ## 📌 Descripción
 Este proyecto fue desarrollado como parte de la **Entrega Final** del curso de Desarrollo Web en Coderhouse.  
 Consiste en un sitio web responsive para **Moto Center**, una empresa ficticia dedicada a la venta de motos y asesoramiento personalizado.
