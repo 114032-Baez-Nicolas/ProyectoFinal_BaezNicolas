@@ -75,14 +75,7 @@ Sitio responsive, funcional, optimizado para SEO y con despliegue en la nube.
 
 ---
 
-## 🖼️ Algunas capturas del sitio
+## 🖼️ Captura del sitio
 
 ### 🏠 Página de Inicio
 ![Página de Inicio](./screenshots/home.png)
-
-### ℹ️ Página de Información
-![Página de Información](./screenshots/info.png)
-
-### 📞 Página de Contacto
-![Página de Contacto](./screenshots/contacto.png)
-
